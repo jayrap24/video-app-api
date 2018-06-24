@@ -1,0 +1,25 @@
+{
+  "name": "video-app-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayrap24/video-app-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayrap24/video-app-api/issues"
+  },
+  "homepage": "https://github.com/jayrap24/video-app-api#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.1.6",
+    "morgan": "^1.9.0",
+    "uuid": "^3.2.1"
+  }
+}
