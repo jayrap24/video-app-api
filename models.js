@@ -19,7 +19,7 @@ videoPostSchema.virtual('authorName').get(function() {
   return `${this.author.firstName} ${this.author.lastName}`.trim();
 });
 
-blogPostSchema.methods.serialize = function() {
+videoPostSchema.methods.serialize = function() {
   return {
     id: this._id,
     author: this.authorName,
@@ -29,6 +29,6 @@ blogPostSchema.methods.serialize = function() {
   };
 };
 
-const VideoPost = mongoose.model('VlogPost', videoPostSchemaPostSchema);
+const VideoPost = mongoose.model('VlogPost', videoPostSchema);
 
-module.exports = {BlogPost};
+module.exports = {VideoPost};
